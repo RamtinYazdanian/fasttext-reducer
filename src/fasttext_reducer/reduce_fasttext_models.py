@@ -67,7 +67,7 @@ def reduce_fasttext_models(root_dir, lang, target_dim):
         source_filename = download_model_to_dir(root_dir, lang)
     target_filename = generate_target_path(root_dir, lang, target_dim)
     reduce_and_save(source_filename, target_filename, target_dim)
-    print(f'ft_{lang}={target_filename}')
+    print(target_filename)
 
 
 def _main():
