@@ -70,7 +70,7 @@ def reduce_fasttext_models(root_dir, lang, target_dim):
     print(f'ft_{lang}={target_filename}')
 
 
-def reduce_fasttext_models_main():
+def _main():
     parser = ArgumentParser()
     parser.add_argument('--root_dir', type=str, required=True)
     parser.add_argument('--lang', type=str, required=True)
@@ -80,4 +80,4 @@ def reduce_fasttext_models_main():
 
 
 if __name__ == '__main__':
-    reduce_fasttext_models_main()
+    _main()
